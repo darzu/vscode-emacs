@@ -63,7 +63,7 @@ function initMarkMode(context: vscode.ExtensionContext): void {
 
     context.subscriptions.push(vscode.commands.registerCommand(
         'emacs.exitMarkMode', () => {
-            vscode.commands.executeCommand("cancelSelection");
+            resetSelection();
             if (inMarkMode) {
                 inMarkMode = false;
                 vscode.window.setStatusBarMessage("Mark deactivated", 1000);
@@ -79,4 +79,13 @@ function registerCommand(commandName: string, op: Operation): vscode.Disposable 
 function initSelection(): void {
     var currentPosition: vscode.Position = vscode.window.activeTextEditor.selection.active;
     vscode.window.activeTextEditor.selection = new vscode.Selection(currentPosition, currentPosition);
+}
+
+function resetSelection(): void {
+    let editor = vscode.window.activeTextEditor;
+    if (!editor) {
+        return;
+    }
+    let currentPosition: vscode.Position = editor.selection.active;
+    editor.selection = new vscode.Selection(currentPosition, currentPosition);
 }

@@ -31,6 +31,42 @@
   "contributes": {
     "commands": [
       {
+        "command": "emacs.cursorRight",
+        "title": "Emacs: Move Cursor Right"
+      },{
+        "command": "emacs.cursorLeft",
+        "title": "Emacs: Move Cursor Left"
+      },{
+        "command": "emacs.cursorUp",
+        "title": "Emacs: Move Cursor Up"
+      },{
+        "command": "emacs.cursorDown",
+        "title": "Emacs: Move Cursor Down"
+      },{
+        "command": "emacs.cursorHome",
+        "title": "Emacs: Move to Beginning of Line"
+      },{
+        "command": "emacs.cursorEnd",
+        "title": "Emacs: Move to End of Line"
+      },{
+        "command": "emacs.cursorWordRight",
+        "title": "Emacs: Move Word Right"
+      },{
+        "command": "emacs.cursorWordLeft",
+        "title": "Emacs: Move Word Left"
+      },{
+        "command": "emacs.cursorPageDown",
+        "title": "Emacs: Move Page Down"
+      },{
+        "command": "emacs.cursorPageUp",
+        "title": "Emacs: Move Page Up"
+      },{
+        "command": "emacs.cursorBottom",
+        "title": "Emacs: Move to End of Buffer"
+      },{
+        "command": "emacs.cursorTop",
+        "title": "Emacs: Move to Beginning of Buffer"
+      },{
         "command": "emacs.C-k",
         "title": "Cut the text from cursor to line end and save it in emacs kill ring"
       },{
@@ -42,6 +78,27 @@
       },{
         "command": "emacs.C-y",
         "title": "Yank (Paste) emacs kill ring"
+      },{
+        "command": "emacs.C-x_C-o",
+        "title": "Emacs: Delete Blank Lines"
+      },{
+        "command": "emacs.C-x_u",
+        "title": "Emacs: Undo"
+      },{
+        "command": "emacs.C-/",
+        "title": "Emacs: Undo"
+      },{
+        "command": "emacs.C-g",
+        "title": "Emacs: Quit"
+      },{
+        "command": "emacs.enterMarkMode",
+        "title": "Emacs: Set Mark"
+      },{
+        "command": "emacs.exitMarkMode",
+        "title": "Emacs: Deactivate Mark"
+      },{
+        "command": "emacs.C-x_r",
+        "title": "Emacs: Registers Prefix"
       }
     ],
     "keybindings": [
